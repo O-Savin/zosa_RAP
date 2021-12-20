@@ -1,0 +1,11 @@
+@EndUserText.label: 'access control for zosac_travel'
+@MappingRole: true
+define role ZOSAC_TRAVEL {
+    grant
+        select
+            on
+                ZOSAC_TRAVEL
+                    where
+                        inheriting conditions from entity zosa_rap_travel;
+                        
+}

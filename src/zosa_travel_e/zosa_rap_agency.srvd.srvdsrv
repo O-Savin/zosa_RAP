@@ -1,0 +1,5 @@
+@EndUserText.label: 'ZOSA_RAP_AGENCY'
+@OData.schema.name: 'ZAGENCYCDS_SRV'
+define service ZOSA_RAP_AGENCY {
+ expose ZZ_TRAVEL_AGENCY_ES5; 
+ } 

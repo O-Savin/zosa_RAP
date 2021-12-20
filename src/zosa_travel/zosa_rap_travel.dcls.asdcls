@@ -1,0 +1,15 @@
+@EndUserText.label: 'access control for zosa_rap_travel'
+@MappingRole: true
+define role ZOSA_RAP_TRAVEL {
+    grant
+        select
+            on
+                ZOSA_RAP_TRAVEL
+                    where
+                        CurrencyCode = 'EUR'
+                        and ( TravelStatus ) = aspect pfcg_auth(ZOSA_STAT, ZOSA_STAT, ACTVT =  '03')
+                        or 
+true // work around because of environment trial restrictions
+//                        ;
+                        ;
+}

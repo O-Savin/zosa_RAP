@@ -1,0 +1,4 @@
+@EndUserText.label: 'Travel Web API service definition'
+define service ZOSA_API_RAP_TRAVEL {
+  expose ZOSAC_TRAVEL as Travel;
+}

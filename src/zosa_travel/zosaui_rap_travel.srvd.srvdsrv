@@ -1,0 +1,13 @@
+@EndUserText.label: 'Service definition for zosac_travel'
+define service ZOSAUI_RAP_Travel {
+  expose ZOSAC_TRAVEL as Travel;
+  expose zosac_booking as Booking;
+  expose zosa_travel_agency as Agency;
+  expose /DMO/I_Customer as Customer;
+  expose /DMO/I_Flight as Flight;
+  expose /DMO/I_Carrier as Carrier;
+  expose /DMO/I_Connection as Connection;
+  expose /DMO/I_Airport as Airport;
+  expose I_Currency as Currency;
+  expose I_Country as Country;
+}
