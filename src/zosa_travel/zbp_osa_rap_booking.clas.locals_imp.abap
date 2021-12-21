@@ -15,7 +15,7 @@ CLASS lhc_Booking IMPLEMENTATION.
 
    DATA max_bookingid TYPE /dmo/booking_id.
    DATA update TYPE TABLE FOR UPDATE zosa_rap_travel\\Booking.
-    DATA lv_test type char.
+
     " Read all travels for the requested bookings.
     " If multiple bookings of the same travel are requested, the travel is returned only once.
     READ ENTITIES OF zosa_rap_travel IN LOCAL MODE
